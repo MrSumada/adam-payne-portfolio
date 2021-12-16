@@ -1,0 +1,37 @@
+:root {
+    --teal-color: rgb(0, 217, 255);
+    --green-color: rgb(13, 94, 87);
+    --peach-color: rgb(230, 221, 198);
+}
+
+* {
+    background-color: var(--green-color);
+}
+
+a {
+    color: var(--teal-color);
+    text-shadow: 0 0 5px black;
+}
+
+h1, h2, h3 {
+    color: var(--teal-color);
+    text-shadow: 0 0 5px black;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+}
+
+.hero {
+    background-color: var(--peach-color);
+    height: 500px;
+    border-radius: 15px;
+}
