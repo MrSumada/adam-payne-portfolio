@@ -1,25 +1,33 @@
 :root {
-    --first-color: rgb(255, 255, 255);
+    --first-color: rgb(204, 255, 255);
     --second-color: rgb(235, 235, 235);
     --third-color: rgb(71, 237, 153);
     --margins: 20px;
+    --shadow: 1px 1px 2px rgba(0, 0, 0, 50%)
 }
 
 * {
     background-color: var(--second-color);
-    margin: 40;
+    margin: 5px;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
     color: var(--first-color);
-    text-shadow: 0 0 5px black;
+    font-size: 20px;
+    text-shadow: var(--shadow)
 }
 
-h1, h2, h3 {
+h1, h2 {
+    color: var(--third-color);
+    text-shadow: var(--shadow)
+}
+
+h3 {
     color: var(--first-color);
-    text-shadow: 0 0 5px black;
+    text-shadow: var(--shadow)
 }
 
 img {
@@ -40,14 +48,16 @@ header nav {
 }
 
 header nav ul a {
-    padding-left: 40px;
+    padding: 0 0 0 40px;
 }
 
 section {
+    display: block;
     padding: 10px 20px;
 }
 
-footer {
+footer h3 {
+    color: var(--second-color);
     text-align: center;
 }
 
@@ -65,17 +75,25 @@ footer {
     padding: 20px;
 }
 
-.section {
-    display: flex;
-    margin: var(--margins);
+.headshot {
+    width: 33%;
+    margin: 0 auto;
+    display: flex-start;
+    flex-wrap: wrap;
+    justify-content: start;
+    border-radius: 20px;
+    border: 2px solid var(--third-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 50%);
 }
 
 .gears {
     display: flex;
-    justify-content: space-between;
-    flex: 1 10%;
-    margin: var(--margins);
+    width: 100%;
+    margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1 auto;
+    /* margin: var(--margins); */
 }
 
 .gear-1, .gear-0 {
@@ -93,17 +111,51 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
 
     header h1 {
         text-align: center;
     }
 
-    nav {
-      flex-direction: column;
+    header nav ul {
+        margin: 0 20px;
+    }
+
+    header nav ul a {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        font-size: 24px;    
+    }
+
+    #extra-gear {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    header nav ul a {
+        display: flex;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        font-size: 24px;    
+    }
+
+    .headshot {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .gear-1 {
         display: none;
     }
   }
+  
   
