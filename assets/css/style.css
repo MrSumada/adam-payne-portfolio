@@ -8,7 +8,7 @@
 
 * {
     background-color: var(--second-color);
-    margin: 5px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -22,12 +22,13 @@ a {
 
 h1, h2 {
     color: var(--third-color);
-    text-shadow: var(--shadow)
+    text-shadow: var(--shadow);
+    margin: 20px 0;
 }
 
 h3 {
     color: var(--first-color);
-    text-shadow: var(--shadow)
+    text-shadow: var(--shadow);
 }
 
 img {
@@ -75,6 +76,10 @@ footer h3 {
     padding: 20px;
 }
 
+/* #projects, #projects > * {
+    background-color: var(--first-color);
+} */
+
 .headshot {
     width: 33%;
     margin: 0 auto;
@@ -98,11 +103,14 @@ footer h3 {
 
 .gear-1, .gear-0 {
     width: 75px;
+    background-color: rgba(0, 0, 0, 0%);
 } 
-
-/* .gear-0 {
+/* 
+.gear-0 {
+    position: absolute
+    left: 50px;
     z-index: 2;
-} */
+}  */
 
 .gear-1 {
     transform: rotate(15deg);
@@ -114,6 +122,8 @@ footer h3 {
     header {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
 
