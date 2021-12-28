@@ -2,7 +2,8 @@
     --first-color: rgb(204, 255, 255);
     --second-color: rgb(235, 235, 235);
     --third-color: rgb(71, 237, 153);
-    --margins: 20px;
+    --fourth-color: rgb(11, 65, 34);
+    --margins: 50px;
     --shadow: 1px 1px 2px rgba(0, 0, 0, 50%)
 }
 
@@ -17,7 +18,12 @@
 a {
     color: var(--first-color);
     font-size: 20px;
-    text-shadow: var(--shadow)
+    text-shadow: var(--shadow);
+    background-color:rgba(0, 0, 0, 0%)
+}
+
+p {
+    color: var(--fourth-color);
 }
 
 h1, h2 {
@@ -55,6 +61,11 @@ header nav ul a {
 section {
     display: block;
     padding: 10px 20px;
+    margin: 0 var(--margins);
+}
+
+footer {
+    margin: 0 0 20px 0;
 }
 
 footer h3 {
@@ -63,7 +74,7 @@ footer h3 {
 }
 
 .hero {
-    background-color: var(--third-color);
+    background: linear-gradient(45deg, rgb(136, 221, 217), linen);
     height: 500px;
     border-radius: 15px;
     padding: 20px;
@@ -76,45 +87,101 @@ footer h3 {
     padding: 20px;
 }
 
-/* #projects, #projects > * {
-    background-color: var(--first-color);
+#projects {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.project-line {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1 auto;
+    justify-content: space-between;
+}
+
+.project-0 {
+    display: flex;
+    text-align: center;
+    background: linear-gradient(45deg, var(--first-color), var(--third-color));
+    padding: 0 0 0 0;
+    border-radius: 20px;
+    margin: 10px;
+    height: 200px;
+    flex: 1 auto;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* .project-0 {
+    background-image: url('../images/Awards.png');
+    background-size: cover;
 } */
 
-.headshot {
-    width: 33%;
-    margin: 0 auto;
-    display: flex-start;
+.project-0 img {
+    border-radius: 20px;
+    height: 300px;
+    opacity: .5;
+    /* width: auto; */
+    object-fit: cover;
+
+}
+
+.contact-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contact-links {
     flex-wrap: wrap;
-    justify-content: start;
+    text-align: right;
+    width: 40%;
+
+}
+
+#contact-links a {
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px 0 10px 0;
+    white-space: nowrap;
+}
+
+.headshot {
+    width: 50%;
+    margin: 0 0 0 0;
     border-radius: 20px;
     border: 2px solid var(--third-color);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 50%);
+    z-index: 1;
+}
+
+.disable-link {
+    pointer-events: none;
+    cursor: default;
 }
 
 .gears {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    flex-wrap: wrap;
+    
     justify-content: space-evenly;
-    flex: 1 auto;
+    
     /* margin: var(--margins); */
 }
 
-.gear-1, .gear-0 {
-    width: 75px;
+.gear-0 {
+    flex: 1 auto;
+    width: 37px;
     background-color: rgba(0, 0, 0, 0%);
 } 
-/* 
-.gear-0 {
-    position: absolute
-    left: 50px;
-    z-index: 2;
-}  */
 
-.gear-1 {
+.gear-0:nth-child(2n) {
     transform: rotate(15deg);
-    /* left: 50px; */
     z-index: 1; 
 }
 
@@ -141,18 +208,39 @@ footer h3 {
         font-size: 24px;    
     }
 
-    #extra-gear {
+    #contact-links {
+        width: 35%;
+    }
+
+    #contact-links a {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .gear-0:nth-last-child(1) {
         display: none;
     }
   }
 
   @media screen and (max-width: 600px) {
 
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
     header nav ul a {
         display: flex;
-        text-align: center;
         padding: 10px 10px 10px 10px;
-        font-size: 24px;    
+        font-size: 24px;
+        justify-content: center; 
+    }
+
+    .project-line {
+        flex-direction: column;
     }
 
     .headshot {
@@ -163,7 +251,22 @@ footer h3 {
         justify-content: space-around;
     }
 
-    .gear-1 {
+    .contact-line{
+        flex-direction: column;
+    }
+
+    #contact-links {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #contact-links a {
+        font-size: 25px;
+    }
+
+    .gear-0:nth-last-child(-n+5) {
         display: none;
     }
   }
