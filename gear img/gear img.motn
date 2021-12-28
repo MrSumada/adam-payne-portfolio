@@ -250,6 +250,7 @@
 		<version>2</version>
 	</publishSettings>
 	<currentFrame>0 1 1 0</currentFrame>
+	<currentObject>10027</currentObject>
 	<activeLayer>10003</activeLayer>
 	<timeRange offset="0 1 1 0" duration="3151148 120000 1 0"/>
 	<playRange offset="0 1 1 0" duration="3151148 120000 1 0"/>
@@ -316,8 +317,9 @@
 						<foldFlags>131072</foldFlags>
 						<parameter name="Brush Color" id="107" flags="12884906000">
 							<foldFlags>15</foldFlags>
-							<parameter name="Red" id="1" flags="12901679120" default="0.99609953165054321" value="0.99609953165054321"/>
-							<parameter name="Green" id="2" flags="12901679120" default="0.99005776643753052" value="0.99005776643753052"/>
+							<parameter name="Red" id="1" flags="12901679120" default="0.99609953165054321" value="0"/>
+							<parameter name="Green" id="2" flags="12901679120" default="0.99005776643753052" value="0"/>
+							<parameter name="Blue" id="3" flags="8606711824" default="1" value="0"/>
 						</parameter>
 						<parameter name="Width" id="105" flags="8606711824" default="2" value="60"/>
 						<parameter name="Arrow Length" id="132" flags="8606711826" default="3" value="3"/>
@@ -388,8 +390,8 @@
 				<baseFlags>524304</baseFlags>
 				<parameter name="Properties" id="1" flags="8589938704"/>
 				<parameter name="Object" id="2" flags="8589938704">
-					<parameter name="Align Angle" id="132" flags="8589934592" default="0" value="1"/>
-					<parameter name="Angle Over Stroke" id="145" flags="8724348928">
+					<parameter name="Align Angle" id="132" flags="8606711808" default="0" value="1"/>
+					<parameter name="Angle Over Stroke" id="145" flags="8741126144">
 						<curve type="1" default="0" value="0" round="0">
 							<numberOfKeypoints>2</numberOfKeypoints>
 							<keypoint interpolation="1" flags="0">
@@ -411,8 +413,8 @@
 					</parameter>
 					<parameter name="Scale" id="116" flags="8589938704">
 						<foldFlags>11</foldFlags>
-						<parameter name="X" id="1" flags="8589934608" default="1" value="0.75"/>
-						<parameter name="Z" id="3" flags="8589934608" default="1" value="0.75"/>
+						<parameter name="X" id="1" flags="8606711824" default="1" value="0.75"/>
+						<parameter name="Z" id="3" flags="8606711824" default="1" value="0.75"/>
 					</parameter>
 					<parameter name="Source Start Frame Over Stroke" id="149" flags="8724348946">
 						<curve type="1" default="0" value="0" round="0">
@@ -436,11 +438,11 @@
 						</curve>
 						<rangeName>Stroke Length</rangeName>
 					</parameter>
-					<parameter name="Random Seed" id="131" flags="12884901888" default="10032" value="10032"/>
+					<parameter name="Random Seed" id="131" flags="12901679104" default="10032" value="10032"/>
 					<parameter name="Dynamics" id="137" flags="8589938688">
 						<foldFlags>8519684</foldFlags>
 					</parameter>
-					<parameter name="Spacing Over Stroke" id="139" flags="8724348928">
+					<parameter name="Spacing Over Stroke" id="139" flags="8741126144">
 						<curve type="1" default="1" value="1" round="0">
 							<numberOfKeypoints>2</numberOfKeypoints>
 							<min>0.01</min>
@@ -462,7 +464,7 @@
 						</curve>
 						<rangeName>Stroke Length</rangeName>
 					</parameter>
-					<parameter name="Width Over Stroke" id="140" flags="8724348928">
+					<parameter name="Width Over Stroke" id="140" flags="8741126144">
 						<curve type="1" default="1" value="1" round="0">
 							<numberOfKeypoints>2</numberOfKeypoints>
 							<min>0</min>
@@ -486,7 +488,7 @@
 					</parameter>
 					<parameter name="Jitter Over Stroke" id="144" flags="8589938688">
 						<foldFlags>15</foldFlags>
-						<parameter name="X" id="1" flags="8724348944">
+						<parameter name="X" id="1" flags="8741126160">
 							<curve type="1" default="0" value="0" round="0">
 								<numberOfKeypoints>2</numberOfKeypoints>
 								<keypoint interpolation="1" flags="0">
@@ -505,7 +507,7 @@
 								</keypoint>
 							</curve>
 						</parameter>
-						<parameter name="Y" id="2" flags="8724348944">
+						<parameter name="Y" id="2" flags="8741126160">
 							<curve type="1" default="0" value="0" round="0">
 								<numberOfKeypoints>2</numberOfKeypoints>
 								<keypoint interpolation="1" flags="0">
@@ -526,7 +528,7 @@
 						</parameter>
 						<rangeName>Stroke Length</rangeName>
 					</parameter>
-					<parameter name="Object Source" id="128" flags="81604444160" default="10027" value="10027"/>
+					<parameter name="Object Source" id="128" flags="81621221376" default="10027" value="10027"/>
 				</parameter>
 			</scenenode>
 			<aspectRatio>1</aspectRatio>
@@ -806,7 +808,7 @@
 			<flags>0</flags>
 			<timing in="0 1 1 0" out="3147144 120000 1 0" offset="0 1 1 0"/>
 			<foldFlags>0</foldFlags>
-			<baseFlags>524304</baseFlags>
+			<baseFlags>268959761</baseFlags>
 			<enabled>0</enabled>
 			<parameter name="Properties" id="1" flags="8589938704">
 				<parameter name="Lighting" id="230" flags="8589938706">
@@ -831,6 +833,12 @@
 					<parameter name="Roundness" id="144" flags="8606711824" default="0" value="5"/>
 					<parameter name="Fill" id="113" flags="8589938704">
 						<foldFlags>131072</foldFlags>
+						<parameter name="Fill Color" id="111" flags="8589938704">
+							<foldFlags>15</foldFlags>
+							<parameter name="Red" id="1" flags="8606711824" default="1" value="0"/>
+							<parameter name="Green" id="2" flags="8606711824" default="1" value="0"/>
+							<parameter name="Blue" id="3" flags="8606711824" default="1" value="0"/>
+						</parameter>
 					</parameter>
 					<parameter name="Outline" id="108" flags="8589971472">
 						<foldFlags>131072</foldFlags>

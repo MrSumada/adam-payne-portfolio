@@ -3,33 +3,49 @@
     --second-color: rgb(235, 235, 235);
     --third-color: rgb(71, 237, 153);
     --fourth-color: rgb(11, 65, 34);
-    --margins: 50px;
+    --fifth-color: rgb(250, 240, 230);
+    --alpha-color-1: rgba(52, 158, 158, 0.8);
+    --alpha-color-2: rgba(71, 237, 153, .2);
+    --gradient: linear-gradient(45deg, var(--alpha-color-1), var(--alpha-color-2));
+    --margins: 20px;
     --shadow: 1px 1px 2px rgba(0, 0, 0, 50%)
 }
 
 * {
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    background-image: linear-gradient(40deg, var(--first-color), var(--fifth-color), var(--first-color), var(--fifth-color));
+}
+
 a {
     color: var(--first-color);
     font-size: 20px;
     text-shadow: var(--shadow);
-    background-color:rgba(0, 0, 0, 0%)
+    background-color:rgba(0, 0, 0, 0%);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
     color: var(--fourth-color);
 }
 
-h1, h2 {
+h1 a {
+    color: var(--third-color);
+    font-size: 50px;
+    text-shadow: var(--shadow);
+    text-decoration: none;
+}
+
+h2 {
     color: var(--third-color);
     text-shadow: var(--shadow);
-    margin: 20px 0;
+    margin: var(--margins) 0;
 }
 
 h3 {
@@ -37,16 +53,13 @@ h3 {
     text-shadow: var(--shadow);
 }
 
-img {
-    width: auto;
-}
-
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    margin: var(--margins) var(--margins) 0 var(--margins);
+    padding: 0 20px;
 }
 
 header nav {
@@ -64,21 +77,30 @@ section {
     margin: 0 var(--margins);
 }
 
+span a {
+    color: var(--fourth-color);
+    font-size: 16px;
+}
+
 footer {
     margin: 0 0 20px 0;
 }
 
 footer h3 {
-    color: var(--second-color);
-    text-align: center;
+    color: var(--first-color);
+    text-align: right;
+    padding: 0 20px;
+    margin: var(--margins);
 }
 
 .hero {
-    background: linear-gradient(45deg, rgb(136, 221, 217), linen);
+    background: linear-gradient(45deg, rgba(136, 221, 217,.9), rgba(50, 240, 230, .2)), url(../../assets/images/hero-image.jpg);
+    background-size: 150% ;
+    background-position: right;
     height: 500px;
-    border-radius: 15px;
+    border-radius: 1px;
     padding: 20px;
-    margin: var(--margins);
+    margin: 0 auto;
 }
 
 .about-me {
@@ -102,52 +124,67 @@ footer h3 {
     justify-content: space-between;
 }
 
-.project-0 {
+.project-thumb {
     display: flex;
     text-align: center;
-    background: linear-gradient(45deg, var(--first-color), var(--third-color));
-    padding: 0 0 0 0;
+    background-size: cover;
+    background-position: center;
+    padding: 5px 5px 5px 5px;
     border-radius: 20px;
     margin: 10px;
     height: 200px;
-    flex: 1 auto;
-    overflow: hidden;
+    flex: 1;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 } 
 
-/* .project-0 {
-    background-image: url('../images/Awards.png');
-    background-size: cover;
-} */
+.project-thumb:hover {
+    border: 5px solid var(--third-color);
+    padding: 0;
+}
 
-.project-0 img {
-    border-radius: 20px;
-    height: 300px;
-    opacity: .5;
-    /* width: auto; */
-    object-fit: cover;
+#project-0 {
+    background-image:  var(--gradient), url(../../assets/images/Awards.png);
+}
 
+#project-1 {
+    background-image:  var(--gradient), url(../../assets/images/winter-trees.jpg);
+}
+
+#project-2 {
+    background-image:  var(--gradient), url(../../assets/images/penguin.jpg);
+}
+
+#project-3 {
+    background-image:  var(--gradient), url(../../assets/images/chess.jpg);
+}
+
+#project-4 {
+    background-image:  var(--gradient), url(../../assets/images/balloons.jpg);
+}
+
+#project-5 {
+    background-image:  var(--gradient), url(../../assets/images/cow-tongue.jpg);
 }
 
 .contact-line{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #contact-links {
-    flex-wrap: wrap;
     text-align: right;
+    align-items: center;
     width: 40%;
-
 }
 
 #contact-links a {
-    font-size: 20px;
+    font-size: 25px;
     display: inline-block;
     margin: 10px 0 10px 0;
-    white-space: nowrap;
+    align-items: center;
 }
 
 .headshot {
@@ -175,8 +212,8 @@ footer h3 {
 }
 
 .gear-0 {
-    flex: 1 auto;
-    width: 37px;
+    flex: 1;
+    width: 37px; 
     background-color: rgba(0, 0, 0, 0%);
 } 
 
@@ -186,26 +223,13 @@ footer h3 {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+
+    h1 a{
+        font-size: 35px;
     }
-
-
-    header h1 {
-        text-align: center;
-    }
-
-    header nav ul {
-        margin: 0 20px;
-    }
-
+    
     header nav ul a {
-        text-align: center;
-        padding: 10px 10px 10px 10px;
-        font-size: 24px;    
+        padding: 0 0 0 15px;
     }
 
     #contact-links {
@@ -213,7 +237,7 @@ footer h3 {
     }
 
     #contact-links a {
-        font-size: 15px;
+        font-size: 18px;
         display: inline-block;
     }
 
@@ -232,6 +256,28 @@ footer h3 {
         font-size: 30px;
     }
 
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header nav ul {
+        margin: 0 20px;
+    }
+
+    header nav ul a {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        font-size: 24px;    
+    }
+
     header nav ul a {
         display: flex;
         padding: 10px 10px 10px 10px;
@@ -239,8 +285,19 @@ footer h3 {
         justify-content: center; 
     }
 
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-size: 100%; */
+        height: 400px; 
+    } 
+
     .project-line {
         flex-direction: column;
+    }
+
+    #project-0, #project-1, #project-2, #project-3, #project-4, #project-5 {
+        flex: 1 auto;
     }
 
     .headshot {
