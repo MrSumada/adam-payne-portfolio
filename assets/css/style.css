@@ -172,7 +172,7 @@ footer h3 {
 
 /* background-size and position need to be after background-image for iPhones */
 #project-0 {
-    background: var(--gradient), url(../../assets/images/Awards.png);
+    background: var(--gradient), url(../../assets/images/Awards.jpg);
 }
 
 #project-1 {
@@ -352,7 +352,7 @@ footer h3 {
     }
 
     #contact-links a {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .gear-0:nth-last-child(-n+5) {
