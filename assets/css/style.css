@@ -59,6 +59,8 @@ h3 {
     text-shadow: var(--shadow);
 }
 
+/* ELEMENT SELECTORS */
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +97,8 @@ footer h3 {
     margin: var(--margins);
 }
 
+/* DECORATIVE GEAR SELECTORS */
+
 .gears {
     display: flex;
     width: 100%;
@@ -111,6 +115,8 @@ footer h3 {
 .gear-0:nth-child(2n) {
     transform: rotate(15deg);
 }
+
+/* HERO SELECTORS */
 
 .hero {
     background: linear-gradient(-45deg, rgba(136, 221, 217, 1), rgba(50, 240, 230, .5)), url(../../assets/images/hero-image.jpg);
@@ -132,6 +138,8 @@ footer h3 {
     opacity: .2;
 }
 
+/* PROJECT SELECTORS */
+
 .project-line {
     display: flex;
     width: 100%;
@@ -145,7 +153,7 @@ footer h3 {
     margin: 10px;
     height: 200px;
     flex: 1;
-    background-size: cover;
+    
 } 
 
 .project-thumb:hover {
@@ -163,29 +171,38 @@ footer h3 {
     text-decoration: none;
 }
 
+/* background-size needs to be after background-image for iPhones */
 #project-0 {
-    background-image:  var(--gradient), url(../../assets/images/Awards.png);
+    background-image: var(--gradient), url(../../assets/images/Awards.png);
+    background-size: cover;
 }
 
 #project-1 {
     background-image:  var(--gradient), url(../../assets/images/winter-trees.jpg);
+    background-size: cover;
 }
 
 #project-2 {
     background-image:  var(--gradient), url(../../assets/images/penguin.jpg);
+    background-size: cover;
 }
 
 #project-3 {
     background-image:  var(--gradient), url(../../assets/images/chess.jpg);
+    background-size: cover;
 }
 
 #project-4 {
     background-image:  var(--gradient), url(../../assets/images/balloons.jpg);
+    background-size: cover;
 }
 
 #project-5 {
     background-image:  var(--gradient), url(../../assets/images/cow-tongue.jpg);
+    background-size: cover;
 }
+
+/* CONTACT SELECTORS */
 
 #contact-line{
     display: flex;
@@ -215,10 +232,15 @@ footer h3 {
     z-index: 1;
 }
 
+/* DISABLE LINKS */
+
 .disable-link {
     pointer-events: none;
     cursor: default;
 }
+
+
+/* @MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
 
@@ -243,6 +265,8 @@ footer h3 {
         display: none;
     }
   }
+
+/* @MEDIA QUERIES - PHONE */
 
   @media screen and (max-width: 600px) {
 
