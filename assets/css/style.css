@@ -282,8 +282,8 @@ footer h3 {
         justify-content: center;
     }
 
-    header h1 {
-        text-align: center;
+    header h1 a {
+        font-size: 40px;
     }
 
     header nav ul {
@@ -352,7 +352,7 @@ footer h3 {
     }
 
     #contact-links a {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .gear-0:nth-last-child(-n+5) {
