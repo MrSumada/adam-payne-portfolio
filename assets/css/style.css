@@ -153,7 +153,6 @@ footer h3 {
     margin: 10px;
     height: 200px;
     flex: 1;
-    background-size: cover;
 } 
 
 .project-thumb:hover {
@@ -171,30 +170,34 @@ footer h3 {
     text-decoration: none;
 }
 
-/* background-size needs to be after background-image for iPhones */
+/* background-size and position need to be after background-image for iPhones */
 #project-0 {
     background: var(--gradient), url(../../assets/images/Awards.png);
-    background-size: cover;
 }
 
 #project-1 {
-    background-image:  var(--gradient), url(../../assets/images/winter-trees.jpg);
+    background:  var(--gradient), url(../../assets/images/winter-trees.jpg);
 }
 
 #project-2 {
-    background-image:  var(--gradient), url(../../assets/images/penguin.jpg);
+    background:  var(--gradient), url(../../assets/images/penguin.jpg);
 }
 
 #project-3 {
-    background-image:  var(--gradient), url(../../assets/images/chess.jpg);
+    background:  var(--gradient), url(../../assets/images/chess.jpg);
 }
 
 #project-4 {
-    background-image:  var(--gradient), url(../../assets/images/balloons.jpg);
+    background:  var(--gradient), url(../../assets/images/balloons.jpg);
 }
 
 #project-5 {
-    background-image:  var(--gradient), url(../../assets/images/cow-tongue.jpg);
+    background:  var(--gradient), url(../../assets/images/cow-tongue.jpg);
+}
+
+#project-0, #project-1, #project-2, #project-3, #project-4, #project-5 {
+    background-size: cover;
+    background-position: center;
 }
 
 /* CONTACT SELECTORS */
