@@ -1,6 +1,6 @@
 # Portfolio for Adam Payne: 
 
-![screenshot](.assets/images/portfolio-screenshot-medium.jpg)
+![screenshot](./assets/images/portfolio-screenshot-medium.jpg)
 
 https://mrsumada.github.io/adam-payne-portfolio/
 
