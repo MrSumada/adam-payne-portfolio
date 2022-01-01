@@ -8,4 +8,4 @@
   
   - A gradient heavy color palette featuring some of Adam's favorite colors
 
-  ![Adam's Headshot](./assets/images/class-pic-small-11.jpg)
+  ![Adam's Headshot](./assets/images/class-pic-small-2.jpg)
