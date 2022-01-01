@@ -1,5 +1,9 @@
 # Portfolio for Adam Payne: 
 
+![screenshot](.assets/images/portfolio-screenshot-medium.jpg)
+
+https://mrsumada.github.io/adam-payne-portfolio/
+
   - Includes a descriptive about me.
   
   - Responsive links to several projects.
