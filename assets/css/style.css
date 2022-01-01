@@ -158,6 +158,7 @@ footer h3 {
 .project-thumb:hover {
     border: 5px solid var(--third-color);
     padding: 0;
+    flex: 1.25;
 }
 
 .project-thumb a {
@@ -327,6 +328,15 @@ footer h3 {
         flex-direction: column;
         margin: 0 10px;
     }
+
+    .project-thumb:hover {
+        height: 230px;
+    }
+
+    .project-thumb a:hover {
+        padding: 100px 0;
+    }
+    
 
     #project-0, #project-1, #project-2, #project-3, #project-4, #project-5 {
         flex: 1 auto;
