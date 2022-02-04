@@ -158,14 +158,13 @@ footer h3 {
 .project-thumb:hover {
     border: 5px solid var(--third-color);
     padding: 0;
-    flex: 1.25;
 }
 
 .project-thumb a {
     display: block;
     height: 100%;
     width: 100%;
-    padding: 85px 0;
+    padding: 70px 5px;
 }
 .project-thumb a:hover {
     text-decoration: none;
@@ -173,27 +172,27 @@ footer h3 {
 
 /* background-size and position need to be after background-image for iPhones */
 #project-0 {
-    background: var(--gradient), url(../../assets/images/Awards.jpg);
+    background: var(--gradient), url(../../assets/images/food-conch-logo.png);
 }
 
 #project-1 {
-    background:  var(--gradient), url(../../assets/images/winter-trees.jpg);
+    background:  var(--gradient), url(../../assets/images/workday-hours.png);
 }
 
 #project-2 {
-    background:  var(--gradient), url(../../assets/images/penguin.jpg);
+    background:  var(--gradient), url(../../assets/images/code-quiz-logo.png);
 }
 
 #project-3 {
-    background:  var(--gradient), url(../../assets/images/chess.jpg);
+    background:  var(--gradient), url(../../assets/images/weather-dashboard-screenshot.png);
 }
 
 #project-4 {
-    background:  var(--gradient), url(../../assets/images/balloons.jpg);
+    background:  var(--gradient), url(../../assets/images/password.png);
 }
 
 #project-5 {
-    background:  var(--gradient), url(../../assets/images/cow-tongue.jpg);
+    background:  var(--gradient), url(../../assets/images/Awards.jpg);
 }
 
 #project-0, #project-1, #project-2, #project-3, #project-4, #project-5 {
@@ -263,11 +262,11 @@ footer h3 {
     .gear-0:nth-last-child(1) {
         display: none;
     }
-  }
+}
 
 /* @MEDIA QUERIES - PHONE */
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     h1 {
         font-size: 50px;
@@ -329,15 +328,6 @@ footer h3 {
         margin: 0 10px;
     }
 
-    .project-thumb:hover {
-        height: 230px;
-    }
-
-    .project-thumb a:hover {
-        padding: 100px 0;
-    }
-    
-
     #project-0, #project-1, #project-2, #project-3, #project-4, #project-5 {
         flex: 1 auto;
     }
@@ -368,4 +358,4 @@ footer h3 {
     .gear-0:nth-last-child(-n+5) {
         display: none;
     }
-  }
+}
